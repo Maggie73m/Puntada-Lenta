@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.barra-superior {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 7%;
+    height: auto;
+}
+
+#menu-superior ul {
+    list-style: none;
+    background-color: #333;
+}
+
+#menu-superior li {
+    display: inline-block;
+}
+
+#menu-superior li a {
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+#carrusel-imagenes {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del carrusel */
+    margin: auto; /* Centra el carrusel */
+}
+
+.carrusel-contenido {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Efecto de transición */
+}
+
+.carrusel-img {
+    width: 100%; 
+    height: auto; 
+}
+
+.carrusel-prev, .carrusel-next {
+    position: absolute;
+    top: 50%; /* Alinear en vertical*/
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px; /* ayuda no me funciona la flecha*/
+    cursor: pointer;
+    outline: none;
+}
+
+.carrusel-prev {
+    left: 10px; /* flecha izquierda */
+}
+
+.carrusel-next {
+    right: 10px; /* flecha derecha */
+}
+
+#datos-contacto {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}

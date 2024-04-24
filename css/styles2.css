@@ -1,0 +1,350 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra superior para el logo y la información de contacto */
+.barra-superior {
+    background-color: #f8f8f8; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Logo de la marca */
+.logo {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 7%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para el menú */
+#menu-superior ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333; 
+    overflow: hidden;
+}
+
+#menu-superior li {
+    display: inline-block;
+    color: white;
+}
+
+#menu-superior li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu-superior li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Submenú desplegable */
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.sub-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-menu li {
+    padding: 12px 16px;
+}
+
+.sub-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.4); /*  opacidad */
+}
+
+.popup-contenido {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+}
+
+.cerrar-popup {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar-popup:hover,
+.cerrar-popup:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+#menu-lateral {
+    width: 20%; 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #ffffff; 
+}
+
+#menu-lateral h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+#menu-categorias ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-categorias li {
+    padding: 10px 0; 
+}
+
+#menu-categorias li a {
+    text-decoration: none;
+    color: #333; 
+    transition: color 0.3s ease;
+}
+
+#menu-categorias li a:hover {
+    color: #000; /* cuando se pasa el mouse por encima */
+    text-decoration: underline; /* Subraya el texto  */
+}
+
+/* Estilos para la imagen grande */
+#contenido-principal {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    justify-content: flex-start; 
+    padding: 20px;
+}
+
+
+#menu-lateral {
+    flex: 0 0 200px; 
+    margin-right: 5px; 
+}
+
+#galeria-imagenes {
+    flex: 1; 
+    max-width: calc(60% - 1rem);
+    padding: 0 20px; 
+}
+
+
+#detalles-compra {
+    flex: 0 0 300px; 
+    margin-left: 20px; 
+}
+
+
+#imagen-principal {
+    width: 60%; 
+    max-width: 400px; 
+    margin-bottom: 20px; 
+    display: block; 
+    margin-right: auto; 
+    margin-left: auto;
+
+}
+
+
+#imagenes-secundarias {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+
+.imagen-galeria {
+    width: 100%; 
+    max-width: 180px; 
+    transition: transform 0.3s ease; /* Efecto de transición  */
+    object-fit: cover; 
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+
+
+/* Estilos para el pop-up (ajustados para parecerse a la referencia) */
+
+
+.flecha-navegacion {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff; /* Flechas visibles sobre el fondo oscuro */
+}
+
+.flecha-izquierda {
+    left: 20px;
+}
+
+.flecha-derecha {
+    right: 20px;
+}
+
+
+#datos-contacto {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#detalles-compra {
+    flex: 1; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#detalles-compra h2 {
+    margin-top: 0; 
+}
+
+#detalles-compra p {
+    margin: 10px 0; 
+    font-size: 14px; 
+    color: #555; 
+}
+
+#detalles-compra label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+#detalles-compra input {
+    padding: 5px; 
+    margin-bottom: 20px; 
+}
+
+#detalles-compra button {
+    padding: 10px 20px; 
+    background-color: #333; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+}
+
+#detalles-compra button:hover {
+    background-color: #555; 
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); 
+}
+
+.popup-contenido {
+    position: relative;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px; 
+    background-color: #fff;
+    text-align: center; 
+}
+
+.popup img {
+    max-width: 70%; 
+    height: auto;
+}
+
+.cerrar-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px; /* Tamaño del tache */
+    color: #333;
+    cursor: pointer;
+}
+
+.cerrar-popup:hover {
+    color: #000; 
+}
+
+.popup:hover {
+    justify-content: center; /*Centra peo si le muevo ya no funciona */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* ESTILO DE LA PARTE DE CATEGORIA*/
+
+.tabla-imagenes {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; 
+}
+
+.tabla-imagenes td {
+    padding: 10px;
+    border: 1px solid #ddd; 
+}
+
+.imagen-galeria {
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.3s; 
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.05); 
+}

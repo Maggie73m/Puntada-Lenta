@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Tienda de Moda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="barra-superior">
+        <img src="img/logo.png" alt="Logo de la Marca" class="logo">
+    </div>
+    
+    <header>
+        <nav id="menu-superior">
+            <ul>
+                <li><a href="html/categoria1.html" id="ropa">Ropa</a></li>
+                <li><a href="html/dossier.html">Dossier</a></li>
+                <li><a href="html/">Otro</a></li>
+            </ul>
+        </nav>
+        <div id="sub-menu-ropa" class="sub-menu">
+            <ul>
+                <li><a href="html/categoria1.html">Faldas</a></li>
+                <li><a href="html/categoria1.html">Tops</a></li>
+                <li><a href="html/categoria1.html">Sudaderas</a></li>
+                <li><a href="html/categoria1.html">Accesorios</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="carrusel-imagenes">
+        <button id="carrusel-prev">‹</button>
+        <div class="carrusel-contenedor">
+            <img src="img/fondo2.png" alt="Imagen 1" class="carrusel-imagen">
+            <img src="img/fondo3.png" alt="Imagen 2" class="carrusel-imagen" style="display: none;">
+        </div>
+        <button id="carrusel-next">›</button>
+    </div>
+    
+
+    <section id="galeria-productos">
+        <div class="producto"><a href="html/prenda1.html"><img src="img/chamarra.jpeg" alt="Prenda 1"></a></div>
+        <div class="producto"><a href="html/prenda1.html"><img src="img/falda1.jpeg" alt="Prenda 2"></a></div>
+        <div class="producto"><a href="html/prenda1.html"><img src="img/chamarra.jpeg" alt="Prenda 3"></a></div>
+        <!-- Agregar más prendas -->
+    </section>
+
+    <section id="anuncio" class="parallax">
+        <div class="anuncio-contenido">
+            <div class="anuncio-item">
+                <i class="icono-rapido"></i>
+                <h3>ENTREGA RÁPIDA</h3>
+                <p>Tus pedidos en casa en un plazo de 24/48h.</p>
+            </div>
+            <div class="anuncio-item">
+                <i class="icono-segura"></i>
+                <h3>COMPRA SEGURA</h3>
+                <p>Las compra realizadas en nuestra web se realizan de forma segura.</p>
+            </div>
+            <div class="anuncio-item">
+                <i class="icono-pago-seguro"></i>
+                <h3>PAGO SEGURO</h3>
+                <p>Las transacciones de pago se realizan de forma segura.</p>
+            </div>
+            <div class="anuncio-item">
+                <i class="icono-servicio-cliente"></i>
+                <h3>SERVICIO AL CLIENTE</h3>
+                <p>Nuestro servicio de atención al cliente resolverá todas tus dudas.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="dossier">
+        <div class="dossier-contenido">
+            <img src="img/falda1.jpeg" alt="Imagen Dossier" class="dossier-imagen">
+            <div class="dossier-texto">
+                <h2>TIENDA SATIRICA</h2>
+                <p>“Parece que la tendencia es quien contamina más, y gasta menos.”</p>
+                <a href="html/dossier.html" class="boton-dossier">LEER MÁS</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div id="datos-contacto">
+            <p>Avenida de no se que poner aquí</p>
+            <p>Teléfono: 988 247 557</p>
+            <!-- poner datos-->
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

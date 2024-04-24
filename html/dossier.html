@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrusel de Imágenes</title>
+    <link rel="stylesheet" href="../css/styleDossier.css"> <!-- Ruta a tu archivo CSS -->
+    <!-- Asegúrate de incluir cualquier biblioteca necesaria para el carrusel -->
+</head>
+<body>
+    <div class="barra-superior">
+        <img src="../img/logo.png" alt="Logo de la Marca" class="logo">
+    </div>
+
+    <header>
+        <nav id="menu-superior">
+            <ul>
+                <li><a href="../html/categoria1.html">Ropa</a></li>
+                <li><a href="../html/dossier.html">Dossier</a></li>
+                <li><a href="../html/categoria1.html">Otro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="contenido-principal">
+        <!-- Carrusel de Imágenes -->
+        <div id="carrusel-imagenes" class="carrusel">
+            <!-- Imágenes para el carrusel -->
+            <div class="carrusel-contenido">
+                <img src="../img/Fondo.png" class="carrusel-img" alt="Imagen 1">
+                <img src="../img/fondo2.png" class="carrusel-img"alt="Imagen 2">
+                <img src="../img/fondo3.png" class="carrusel-img" alt="Imagen 3">
+                <!-- Añade más imágenes según sea necesario -->
+            </div>
+
+            <!-- Controles para navegar -->
+            <button class="carrusel-prev">❮</button> <!-- Flecha izquierda -->
+            <button class="carrusel-next">❯</button> <!-- Flecha derecha -->
+        </div>
+    </div>
+
+    <footer>
+        <div id="datos-contacto">
+            <p>Avenida de no se que poner</p>
+            <p>Teléfono: 988 247 557</p>
+        </div>
+    </footer>
+
+    <script src="../js/scriptsDossier.js"> <!-- Script para controlar el carrusel --> </script>
+</body>
+</html>

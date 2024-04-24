@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.barra-superior {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 7%;
+    height: auto;
+}
+
+#menu-superior ul {
+    list-style: none;
+    background-color: #333;
+}
+
+#menu-superior li {
+    display: inline-block;
+}
+
+#menu-superior li a {
+    padding: 14px;
+    color: white;
+}
+
+#contenido-principal {
+    display: flex;
+}
+
+#menu-lateral {
+    flex: 0 0 200px;
+}
+
+.tabla-imagenes {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; /* Centra el contenido de la celda */
+}
+
+.tabla-imagenes td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Borde para cada celda */
+}
+
+.imagen-galeria {
+    width: 100%; /* Usa todo el ancho de la celda */
+    height: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s; /* Efecto de escala al hacer hover */
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.05); /* Escala ligeramente la imagen */
+}
+
+#datos-contacto {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}

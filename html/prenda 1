@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle del Producto</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Asegúrate de incluir el enlace a tu fuente de iconos aquí si planeas usar iconos -->
+</head>
+<body>
+    <!-- Barra Superior & Menú, copiar desde index.html -->
+    <!-- ... -->
+
+    <div id="contenido-principal">
+        <!-- Menú lateral -->
+        <aside id="menu-lateral">
+            <!-- Añade aquí tus enlaces o estructura de menú lateral -->
+            <!-- ... -->
+        </aside>
+
+        <!-- Sección de imágenes -->
+        <section id="galeria-imagenes">
+            <img src="ruta/a/imagen-grande.jpg" alt="Imagen Principal del Producto" id="imagen-principal">
+            <div id="imagenes-secundarias">
+                <!-- Añade aquí tus imágenes secundarias -->
+                <!-- ... -->
+            </div>
+        </section>
+
+        <!-- Sección de detalles de compra -->
+        <aside id="detalles-compra">
+            <h2>VESTIDO LARGO SEAGRASS</h2>
+            <!-- Añade aquí la descripción, precio y opciones de compra -->
+            <!-- ... -->
+            <button id="boton-popup">Ver Imagen</button>
+        </aside>
+    </div>
+
+    <!-- Pop-up para la imagen -->
+    <div id="popup-imagen" class="popup">
+        <div class="popup-contenido">
+            <span class="cerrar-popup">&times;</span>
+            <img src="ruta/a/imagen-grande.jpg" alt="Imagen Ampliada">
+        </div>
+    </div>
+
+    <!-- Información del final, copiar desde index.html -->
+    <!-- ... -->
+
+    <script src="scripts.js"></script>
+</body>
+</html>
